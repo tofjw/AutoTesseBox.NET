@@ -1,4 +1,4 @@
-﻿namespace AutoBox
+﻿namespace AutoTesseBox
 {
     partial class MainForm
     {
@@ -296,7 +296,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainForm";
-            this.Text = "AutoBox.NET";
+            this.Text = "AutoTesseBox.NET";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

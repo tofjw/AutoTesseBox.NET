@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AutoBox.Properties
+namespace AutoTesseBox.Properties
 {
 
 
