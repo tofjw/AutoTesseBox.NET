@@ -166,6 +166,8 @@ namespace AutoTesseBox
             using (var bm = new Bitmap(100, 100))
             using (var g = Graphics.FromImage(bm))
             {
+                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+
                 for (int i = 0; i < s.Length; i++)
                 {
                     string cs = s.Substring(i, 1);
