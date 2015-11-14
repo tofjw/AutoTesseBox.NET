@@ -178,8 +178,6 @@ namespace AutoTesseBox
                         if (m.Width > 0)
                         {
                             chars.Add(cs);
-
-
                             metrics.Add(m);
                         }
                     }
@@ -204,6 +202,11 @@ namespace AutoTesseBox
             int strHeight = (int)strSize.Height * 2;
 
             var strBm = new Bitmap(strWidth, strHeight);
+
+            if (chars.Count == 0)
+            {
+                return new LineData(strBm, new List<BoxData>());
+            }
 
             using (var g = Graphics.FromImage(strBm))
             {
