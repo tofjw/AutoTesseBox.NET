@@ -449,8 +449,6 @@ namespace AutoTesseBox
 
         static void ProcessLines(string outDir, List<string> lines, Font font, string lang, string trainFont, int seq)
         {
-            Console.WriteLine("test");
-
             var lds = new List<LineData>();
             foreach(var line in lines)
             {

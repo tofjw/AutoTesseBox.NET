@@ -39,22 +39,25 @@
             this.tbFontName = new System.Windows.Forms.TextBox();
             this.lbFontName = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbLanguage = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbTrainFont = new System.Windows.Forms.TextBox();
-            this.lbBaseNum = new System.Windows.Forms.Label();
-            this.numBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbTextFile = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbOutDir = new System.Windows.Forms.TextBox();
-            this.btnTextFileSelect = new System.Windows.Forms.Button();
             this.btnOutDirSelect = new System.Windows.Forms.Button();
+            this.btnTextFileSelect = new System.Windows.Forms.Button();
+            this.tbOutDir = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbTextFile = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.lbBaseNum = new System.Windows.Forms.Label();
+            this.tbTrainFont = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbLanguage = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tbBatch = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBaseNum)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -167,104 +170,12 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.tbLanguage);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 139);
+            this.groupBox2.Location = new System.Drawing.Point(12, 118);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(543, 157);
+            this.groupBox2.Size = new System.Drawing.Size(543, 158);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Training File";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Language:";
-            // 
-            // tbLanguage
-            // 
-            this.tbLanguage.Location = new System.Drawing.Point(67, 21);
-            this.tbLanguage.Name = "tbLanguage";
-            this.tbLanguage.Size = new System.Drawing.Size(79, 19);
-            this.tbLanguage.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 12);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Font:";
-            // 
-            // tbTrainFont
-            // 
-            this.tbTrainFont.Location = new System.Drawing.Point(67, 46);
-            this.tbTrainFont.Name = "tbTrainFont";
-            this.tbTrainFont.Size = new System.Drawing.Size(79, 19);
-            this.tbTrainFont.TabIndex = 12;
-            // 
-            // lbBaseNum
-            // 
-            this.lbBaseNum.AutoSize = true;
-            this.lbBaseNum.Location = new System.Drawing.Point(6, 74);
-            this.lbBaseNum.Name = "lbBaseNum";
-            this.lbBaseNum.Size = new System.Drawing.Size(58, 12);
-            this.lbBaseNum.TabIndex = 13;
-            this.lbBaseNum.Text = "Base num:";
-            // 
-            // numBaseNum
-            // 
-            this.numBaseNum.Location = new System.Drawing.Point(67, 72);
-            this.numBaseNum.Name = "numBaseNum";
-            this.numBaseNum.Size = new System.Drawing.Size(120, 19);
-            this.numBaseNum.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Text File:";
-            // 
-            // tbTextFile
-            // 
-            this.tbTextFile.Location = new System.Drawing.Point(67, 97);
-            this.tbTextFile.Name = "tbTextFile";
-            this.tbTextFile.ReadOnly = true;
-            this.tbTextFile.Size = new System.Drawing.Size(372, 19);
-            this.tbTextFile.TabIndex = 16;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 122);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 12);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Output Dir:";
-            // 
-            // tbOutDir
-            // 
-            this.tbOutDir.Location = new System.Drawing.Point(67, 122);
-            this.tbOutDir.Name = "tbOutDir";
-            this.tbOutDir.ReadOnly = true;
-            this.tbOutDir.Size = new System.Drawing.Size(372, 19);
-            this.tbOutDir.TabIndex = 18;
-            // 
-            // btnTextFileSelect
-            // 
-            this.btnTextFileSelect.Location = new System.Drawing.Point(446, 95);
-            this.btnTextFileSelect.Name = "btnTextFileSelect";
-            this.btnTextFileSelect.Size = new System.Drawing.Size(75, 23);
-            this.btnTextFileSelect.TabIndex = 10;
-            this.btnTextFileSelect.Text = "Browse...";
-            this.btnTextFileSelect.UseVisualStyleBackColor = true;
-            this.btnTextFileSelect.Click += new System.EventHandler(this.btnTextFileSelect_Click);
             // 
             // btnOutDirSelect
             // 
@@ -276,9 +187,102 @@
             this.btnOutDirSelect.UseVisualStyleBackColor = true;
             this.btnOutDirSelect.Click += new System.EventHandler(this.btnOutDirSelect_Click);
             // 
+            // btnTextFileSelect
+            // 
+            this.btnTextFileSelect.Location = new System.Drawing.Point(446, 95);
+            this.btnTextFileSelect.Name = "btnTextFileSelect";
+            this.btnTextFileSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnTextFileSelect.TabIndex = 10;
+            this.btnTextFileSelect.Text = "Browse...";
+            this.btnTextFileSelect.UseVisualStyleBackColor = true;
+            this.btnTextFileSelect.Click += new System.EventHandler(this.btnTextFileSelect_Click);
+            // 
+            // tbOutDir
+            // 
+            this.tbOutDir.Location = new System.Drawing.Point(67, 122);
+            this.tbOutDir.Name = "tbOutDir";
+            this.tbOutDir.ReadOnly = true;
+            this.tbOutDir.Size = new System.Drawing.Size(372, 19);
+            this.tbOutDir.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 122);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 12);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Output Dir:";
+            // 
+            // tbTextFile
+            // 
+            this.tbTextFile.Location = new System.Drawing.Point(67, 97);
+            this.tbTextFile.Name = "tbTextFile";
+            this.tbTextFile.ReadOnly = true;
+            this.tbTextFile.Size = new System.Drawing.Size(372, 19);
+            this.tbTextFile.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Text File:";
+            // 
+            // numBaseNum
+            // 
+            this.numBaseNum.Location = new System.Drawing.Point(67, 72);
+            this.numBaseNum.Name = "numBaseNum";
+            this.numBaseNum.Size = new System.Drawing.Size(120, 19);
+            this.numBaseNum.TabIndex = 14;
+            // 
+            // lbBaseNum
+            // 
+            this.lbBaseNum.AutoSize = true;
+            this.lbBaseNum.Location = new System.Drawing.Point(6, 74);
+            this.lbBaseNum.Name = "lbBaseNum";
+            this.lbBaseNum.Size = new System.Drawing.Size(58, 12);
+            this.lbBaseNum.TabIndex = 13;
+            this.lbBaseNum.Text = "Base num:";
+            // 
+            // tbTrainFont
+            // 
+            this.tbTrainFont.Location = new System.Drawing.Point(67, 46);
+            this.tbTrainFont.Name = "tbTrainFont";
+            this.tbTrainFont.Size = new System.Drawing.Size(79, 19);
+            this.tbTrainFont.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(30, 12);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Font:";
+            // 
+            // tbLanguage
+            // 
+            this.tbLanguage.Location = new System.Drawing.Point(67, 21);
+            this.tbLanguage.Multiline = true;
+            this.tbLanguage.Name = "tbLanguage";
+            this.tbLanguage.Size = new System.Drawing.Size(79, 19);
+            this.tbLanguage.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Language:";
+            // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(480, 333);
+            this.btnRun.Location = new System.Drawing.Point(482, 377);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 3;
@@ -286,11 +290,35 @@
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tbBatch);
+            this.groupBox3.Location = new System.Drawing.Point(12, 282);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(543, 89);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Batch mode command line:";
+            // 
+            // tbBatch
+            // 
+            this.tbBatch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbBatch.Location = new System.Drawing.Point(6, 18);
+            this.tbBatch.Multiline = true;
+            this.tbBatch.Name = "tbBatch";
+            this.tbBatch.ReadOnly = true;
+            this.tbBatch.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbBatch.Size = new System.Drawing.Size(530, 65);
+            this.tbBatch.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 368);
+            this.ClientSize = new System.Drawing.Size(569, 412);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -302,6 +330,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBaseNum)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -332,6 +362,8 @@
         private System.Windows.Forms.TextBox tbLanguage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox tbBatch;
     }
 }
 

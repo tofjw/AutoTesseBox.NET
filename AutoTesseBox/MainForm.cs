@@ -32,6 +32,17 @@ namespace AutoTesseBox
             UpdateFont();
 
             tbOutDir.Text = System.IO.Directory.GetCurrentDirectory();
+
+            tbBatch.KeyPress += tbBatch_KeyPress;
+        }
+
+        void tbBatch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 1)
+            {
+                tbBatch.SelectAll();
+                e.Handled = true;
+            }
         }
 
         public Font CurrentFont {
@@ -110,6 +121,30 @@ namespace AutoTesseBox
             }
         }
 
+        string QuoteIfNeeded(string s)
+        {
+            if (s.Contains(" "))
+                return "\"" + s + "\"";
+
+            return s;
+        }
+        string CreateCommandLine(string outDir, string textFile, Font font, string lang, string trainFont, int baseNum)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("AutoTesseBox");
+            sb.Append(" /batch");
+            sb.Append(" /fontname:").Append(QuoteIfNeeded(font.Name));
+            sb.Append(" /fontsize:").Append(font.Size.ToString());
+            if (font.Italic) sb.Append(" /italic");
+            if (font.Bold) sb.Append(" /bold");
+            sb.Append(" /textfile:").Append(QuoteIfNeeded(textFile));
+            sb.Append(" /outdir:").Append(QuoteIfNeeded(outDir));
+            sb.Append(" /tesselang:").Append(QuoteIfNeeded(lang));
+            sb.Append(" /tessefont:").Append(QuoteIfNeeded(trainFont));
+
+            return sb.ToString();
+        }
+
         private void btnRun_Click(object sender, EventArgs e)
         {
             if (Lang.Length == 0)
@@ -139,8 +174,12 @@ namespace AutoTesseBox
             {
                 Cursor.Current = Cursors.WaitCursor;
                 Engine.Process(OutDir, TextFile, CurrentFont, Lang, TrainFont, BaseNum);
+                MessageBox.Show("Done.");
+
+                string cmdLine = CreateCommandLine(OutDir, TextFile, CurrentFont, Lang, TrainFont, BaseNum);
+                tbBatch.AppendText(cmdLine + "\r\n");
             }
-                catch(Exception ex)
+            catch(Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
