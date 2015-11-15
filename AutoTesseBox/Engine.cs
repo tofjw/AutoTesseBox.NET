@@ -166,7 +166,7 @@ namespace AutoTesseBox
             using (var bm = new Bitmap(100, 100))
             using (var g = Graphics.FromImage(bm))
             {
-                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
 
                 for (int i = 0; i < s.Length; i++)
                 {
@@ -212,6 +212,8 @@ namespace AutoTesseBox
 
             using (var g = Graphics.FromImage(strBm))
             {
+                g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+
                 g.FillRectangle(Brushes.White, 0, 0, strBm.Width, strBm.Height);
                 g.DrawString(s, font, Brushes.Black, new PointF(0, 0));
                 g.Flush();
